@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,600,700&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2b2f85;
+    text-transform: uppercase;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #b0b0b1;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+nav {
+    display: flex;
+}
+nav ul {
+    margin-left: 25px;
+}
+
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.banner {
+    background-image: url(../images/banner.png);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.content h1 {
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.icon {
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -25%);
+    animation: icon-ani 1s linear infinite ;
+    animation-direction: alternate;
+
+}
+
+.icon i {
+    color: white;
+    font-size: 30px;
+}
+
+@keyframes icon-ani {
+    0% {
+        transform: translate(-50%, 0%);
+    }
+    100% {
+        transform: translate(-50%, -80%);
+    }
+}
+
+.who-we-are {
+    overflow: hidden;
+}
+
+.who-we-are-content {
+    width: 50%;
+    float: left;
+    margin-top: 100px;
+    position: relative;
+}
+
+.who-we-are-content h1::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    top: 0;
+    background-color: #f2622c;
+}
+.who-we-are-content h1 {
+    margin:20px 0;
+}
+
+.who-we-are-content p {
+    margin-bottom: 20px;
+    line-height: 2;
+    width: 80%;
+    text-align: justify;
+}
+
+.who-we-are-img{
+    margin-top: 75px;
+    width: 50%;
+    float: right;
+}
+
+
+
+
+.what-we-do-part {
+    background-color: #e1e4e5;
+    background-image: url(../images/what-we-do-bg.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+
+}
+
+.who-we-do-content {
+    position: relative;
+    width: 30%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.who-we-do-content::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f2622c;
+}
+
+.who-we-do-content h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.what-we-do {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.what-we-text h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: white;
+    transition: all .4s ease;
+    font-size: 22px;
+}
+
+.what-we-text h1{
+    opacity: 0;
+}
+.items {
+    position: relative;
+    
+}
+
+
+.items:hover .what-we-text h1{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.what-we-icon i {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 36px;
+    transition: all .5s ease;
+} 
+.what-we-icon i {
+    opacity: 0;
+}
+
+.items:hover .what-we-icon i{
+    opacity: 1;
+    transform: translatex(-30%);
+} 
+
+
+
+.img {
+    position: relative;
+}
+
+.img::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2e3387+100&0.4+80,1+100 */
+background: -moz-linear-gradient(top,  rgba(30,87,153,0.4) 0%, rgba(43,58,139,0.4) 80%, rgba(46,51,135,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,0.4) 0%,rgba(43,58,139,0.4) 80%,rgba(46,51,135,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(30,87,153,0.4) 0%,rgba(43,58,139,0.4) 80%,rgba(46,51,135,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#661e5799', endColorstr='#2e3387',GradientType=0 ); /* IE6-9 */
+
+}
+
+.attorney h1 {
+    color: white;
+    width: 20px;
+}
+
+.attorney a p {
+    color: #f2622c;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.attorney {
+    width: 25%;
+}
+
+.attorneys-part {
+    background-image: url(../images/attorney-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.attorneys-area {
+    width: 75%;
+    float: right;
+}
+
+.attorneys{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.attorneys-one {
+    position: relative;
+    padding: 10px;
+}
+
+.Attorneys-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-80%, -30%);
+    transition: all .4s ease;
+    
+}
+
+.Attorneys-text {
+    opacity: 0;
+}
+
+.attorneys-one:hover .Attorneys-text {
+    opacity: 1;
+    transform: translate(-80%, -50%);
+}
+
+.Attorneys-text h2 {
+    color: #ffffff;
+}
+
+.languages-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0px;
+}
+
+.languages h1 {
+    padding-bottom: 15px;
+}
+
+
+.languages p {
+    padding-top: 10px;
+    line-height: 2;
+    justify-content: center;
+}
+
+.languages a p {
+    color: #f2622c;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+.form-part {
+    background-color: #2b2f85;
+    padding-bottom:50px;
+
+}
+.contact h1 {
+    color: white;
+    
+}
+.form {
+    width: 30%;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.form input {
+    width: 100%;
+    background-color: #2b2f85 ;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #4759a7;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.button {
+    /* align-items: center; */
+    width: 45%;
+    margin: auto;
+}
+
+input.send {
+    
+    margin-top: 20px;
+    border: none;
+    border: 1px solid #f2622c;
+    background-color: #f2622c;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+
+footer {
+    background-color: #0c1234;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:25px;
+}
+.footer-text p {
+    font-size: 15px;
+}
+.socil-icon a {
+    font-size: 20px;
+    padding-left: 15px;
+    color: #ffffff;
+}
+ 
